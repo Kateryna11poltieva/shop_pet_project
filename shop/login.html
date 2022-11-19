@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Shop</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+	<div class="container">
+		<div id="headerContainer" class="header__container">
+		</div>
+	</div>
+</header>
+
+<div class="container">
+	<div class="columns">
+		<form id="loginForm" class="userForm">
+			<p class="title">Secure Sign In</p>
+			<p class="desription">For current customers</p>
+
+			<div id="signError" class="error">Invalid email address or password.</div>
+
+			<label>
+				<input id="signUserEmail" type="email" placeholder="Email Address" data-name="email" required>
+			</label>
+
+			<label>
+				<input id="signUserPassword" type="password" placeholder="Password" data-name="password" required>
+			</label>
+
+			<button class="btn">Sign in</button>
+		</form>
+
+		<form id="registrationForm" class="userForm">
+			<p class="title">Quick Registration</p>
+			<p class="desription">For new customers</p>
+
+			<div id="registrationError" class="error">Invalid email address or password.</div>
+
+			<label>
+				<input id="newUserName" type="text" placeholder="Full name" data-name="name" required>
+			</label>
+
+			<label>
+				<input id="registrationUserEmail" type="email" placeholder="Email Address" data-name="email" required>
+			</label>
+
+			<label>
+				<input id="registrationPassword" type="password" placeholder="Password" data-name="password" required>
+			</label>
+
+			<label>
+				<input id="registrationPasswordVerify" type="password" placeholder="Verify Password" data-name="passwordVerify" required>
+			</label>
+
+			<button class="btn">Create Account</button>
+		</form>
+	</div>
+</div>
+
+<script src="js/login.js"></script>
+</body>
+</html>
+
+
